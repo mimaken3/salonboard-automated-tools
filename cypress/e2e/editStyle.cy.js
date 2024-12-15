@@ -13,11 +13,11 @@ describe('スタイル掲載情報編集', () => {
 
     // ID を入力
     cy.get('input[name="userId"]')
-      .type('CC34082');
+      .type(id);
 
     // パスワードを入力
     cy.get('input[name="password"]')
-      .type('fifth-5555!!');
+      .type(password);
 
     // ログインボタンをクリック
     cy.get('a.common-CNCcommon__primaryBtn').click();
