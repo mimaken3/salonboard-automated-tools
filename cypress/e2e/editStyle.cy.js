@@ -1,23 +1,15 @@
-import { getEnv } from '../support/helpers'
-
 describe('スタイル掲載情報編集', () => {
-  const id = getEnv('ID')
-  const password = getEnv('PASSWORD')
-
-  console.log(id)
-  console.log(password)
-
   it('スタイル掲載情報編集を自動化', () => {
     // サイトにアクセス
     cy.visit('https://salonboard.com/login');
 
     // ID を入力
     cy.get('input[name="userId"]')
-      .type(id);
+      .type(Cypress.env('id'));
 
     // パスワードを入力
     cy.get('input[name="password"]')
-      .type(password);
+      .type(Cypress.env('password'));
 
     // ログインボタンをクリック
     cy.get('a.common-CNCcommon__primaryBtn').click();
