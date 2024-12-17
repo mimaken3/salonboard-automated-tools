@@ -2,6 +2,7 @@
 
 ## Cypress
 
+- ローカル用の機密情報ファイルを作成
 ```sh
 cp cypress.env.json.example cypress.env.json
 vi cypress.env.json
