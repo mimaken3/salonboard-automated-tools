@@ -11,11 +11,17 @@ vi cypress.env.json
 - Cypress コマンドがない場合、次のコマンドで Cypress をインストール。
 ```sh
 npm install cypress --save-dev
+
+```
+
+- ファイルアップローダーもインストール。
+```sh
+npm install --save-dev cypress-file-upload
 ```
 
 - 次のコマンドを実行すると Cypress が起動する。
 ```sh
-npx run cypress:open
+npx cypress open
 ```
 
 - 「Welcome to Cypress!」という画面が出たら、左側に表示されている「E2E Testing」をクリックする。
