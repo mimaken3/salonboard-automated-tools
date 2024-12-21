@@ -37,6 +37,11 @@ cp .env.example .env
 vi .env
 ```
 
+- 次のコマンドで Puppeteer に関するライブラリをインストール。
+```sh
+npm install puppeteer puppeteer-extra puppeteer-extra-plugin-stealth
+```
+
 - 次のコマンドを実行すると Puppeteer が起動する。
 
 ```sh
